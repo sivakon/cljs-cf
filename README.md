@@ -19,10 +19,9 @@ exports.greet = (req, res) => {
 
 ```clj
 (defn greet [req res]
-  (println "hey partner")
   (-> res
       (.status 200)
-      (.send "Hello Siva")))
+      (.send "Hello World")))
 
 (enable-console-print!)
 

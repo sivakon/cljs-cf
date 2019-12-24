@@ -1,14 +1,14 @@
 (ns cljs-gcf.core)
 
 (defn greet [req res]
-  (println "hey partner")
+  (println "console hello on Stackdriver")
   (-> res
       (.status 200)
       (.send
        (or
         (.. req -query -message)
         (.. req -body -message)
-        "Hello Siva"))))
+        "Hello World"))))
 
 (enable-console-print!)
 
