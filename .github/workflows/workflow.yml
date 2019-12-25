@@ -17,4 +17,4 @@ jobs:
           tools-deps: latest
 
       - name: Build
-        run: clj -Abuildgh
+        run: clojure -Abuildgh
