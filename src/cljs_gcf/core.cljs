@@ -8,9 +8,6 @@
               (.. req -query -message)
               (.. req -body -message)
               "Hello World"))))
-              
-              
-       
 
 (enable-console-print!)
 

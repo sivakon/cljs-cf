@@ -1,1 +1,6 @@
-{:deps {org.clojure/clojurescript {:mvn/version "1.10.520"}}}
+{:paths ["src"
+         "."]
+ :deps {org.clojure/clojurescript {:mvn/version "1.10.520"}}
+ :aliases
+ {:hello {:main-opts ["-e" "(println,\"hello\")"]}
+  :build {:main-opts ["-m" "build-deploy"]}}}
