@@ -1,0 +1,18 @@
+name: Build on Github for deploying to GCF
+
+on: [push]
+
+jobs:
+  build:
+    - name: Prepare Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.11
+        
+    - name: Install all the tools together
+      uses: DeLaGuardo/setup-clojure@master
+      with:
+        tools-deps: latest
+
+    - name: Build
+      run: clojure -A:buildgh

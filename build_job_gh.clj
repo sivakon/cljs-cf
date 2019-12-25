@@ -1,4 +1,5 @@
-(ns build-deploy
+;; to check if the build is successful on Github
+(ns build-job-gh
   (:require [cljs.build.api :as b]))
 
 (println "Building...")
