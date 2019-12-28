@@ -10,11 +10,15 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.11
-        
+
       - name: Install all the tools together
         uses: DeLaGuardo/setup-clojure@master
         with:
           tools-deps: latest
+
+      - uses: actions/checkout@v2
+        with:
+        ref: master
 
       - name: Build
         run: clojure -Abuildgh
