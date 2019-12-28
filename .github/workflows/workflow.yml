@@ -17,8 +17,6 @@ jobs:
           tools-deps: latest
 
       - uses: actions/checkout@v2
-        with:
-        ref: master
 
       - name: Build
         run: clojure -Abuildgh
